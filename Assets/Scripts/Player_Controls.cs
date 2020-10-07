@@ -5,21 +5,22 @@ using UnityEngine;
 public class Player_Controls : MonoBehaviour
 {
     public float movespeed = 5f;
-    public float jumpspeed = 10f;
+    public float jumpspeed;
     public bool isGrounded = false;
+    private Rigidbody2D body;
   
-
-    // Start is called before the first frame update
     void Start()
     {
         
         
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         Jump();
+    }
+
+    void FixedUpdate()
+    {
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
         transform.position += movement * Time.deltaTime * movespeed;
     }
@@ -29,6 +30,7 @@ public class Player_Controls : MonoBehaviour
         {
             GetComponent<Player_Controls>().isGrounded = true;
         }
+       
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
@@ -42,8 +44,9 @@ public class Player_Controls : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && isGrounded == true)
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 5f), ForceMode2D.Impulse);
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpspeed), ForceMode2D.Impulse);
         }
         
     }
+    
 }
