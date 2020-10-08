@@ -534,10 +534,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -1, y: 97}
+  scrollPos: {x: 74.5, y: 88}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 591
+  blockViewHeight: 519
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -619,6 +619,11 @@ MonoBehaviour:
   scope: 0
   key: player_in_range
   value: 0
+--- !u!4 &747192875 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7061512834465768718, guid: 500819a622204a34cb05eea927ab656a, type: 3}
+  m_PrefabInstance: {fileID: 417595164}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &747192877
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -981,8 +986,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 101
-    y: 146
+    x: 110
+    y: 152
     width: 90
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1011,8 +1016,8 @@ MonoBehaviour:
   indentLevel: 1
   storyText: Lol you died
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 823570579}
+  portrait: {fileID: 21300000, guid: f116183842fc917428365e113205c54f, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1281,6 +1286,88 @@ MonoBehaviour:
   suppressBlockAutoSelect: 0
   keyPressType: 0
   keyCode: 101
+--- !u!1 &823570577
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 823570580}
+  - component: {fileID: 823570579}
+  - component: {fileID: 823570578}
+  m_Layer: 0
+  m_Name: DIO
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &823570578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823570577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: -1
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 823570579}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: f116183842fc917428365e113205c54f, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 1
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &823570579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823570577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: DIO
+  nameColor: {r: 1, g: 0.88759816, b: 0, a: 1}
+  soundEffect: {fileID: 0}
+  portraits:
+  - {fileID: 21300000, guid: f116183842fc917428365e113205c54f, type: 3}
+  portraitsFace: 0
+  setSayDialog: {fileID: 0}
+  description: 
+--- !u!4 &823570580
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823570577}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.7, y: 1.69, z: 0}
+  m_LocalScale: {x: 0.8333333, y: 0.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 747192875}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &838378688
 PrefabInstance:
   m_ObjectHideFlags: 0
