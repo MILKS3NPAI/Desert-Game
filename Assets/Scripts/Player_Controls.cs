@@ -23,7 +23,7 @@ public class Player_Controls : MonoBehaviour
     }
 
     void FixedUpdate()
-    {
+    {  
         movement = Input.GetAxis("Horizontal") * movespeed;
         body.velocity = new Vector3(movement, body.velocity.y, 0f);
     }
@@ -40,7 +40,12 @@ public class Player_Controls : MonoBehaviour
     private bool IsGrounded()
     {
         RaycastHit2D raycastHit2d = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, 0f, Vector2.down, .1f, platformsLayerMask);
-        Debug.Log(raycastHit2d.collider);
         return raycastHit2d.collider != null;
     }
+    //private bool WallCollision()
+    //{
+    //    RaycastHit2D raycastHit2dleft = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, 0f, Vector2.left, .1f, platformsLayerMask);
+    //    RaycastHit2D raycastHit2dright = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, 0f, Vector2.right, .1f, platformsLayerMask);
+    //    return raycastHit2dleft.collider != null;
+    //}
 }
