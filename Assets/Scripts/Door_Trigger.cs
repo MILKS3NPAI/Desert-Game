@@ -7,10 +7,11 @@ public class Door_Trigger : MonoBehaviour
     [SerializeField]
     private SwitchDetect switch_detect = null;
     public static Animator dooranimator;
+    public AudioSource sound;
     private void Awake()
     {
         dooranimator = GetComponent<Animator>();
-
+        sound = GetComponent<AudioSource>();
     }
     private void Update()
     {
@@ -19,13 +20,21 @@ public class Door_Trigger : MonoBehaviour
       { 
         if (Input.GetKeyDown(KeyCode.E))
         {
-                dooranimator.SetBool("Open", true);
+                if(dooranimator.GetBool("Open") == false)
+                {
+                    dooranimator.SetBool("Open", true);
+                    sound.Play();
+                }
+               
         }
       }
 
-      if (Input.GetKeyDown(KeyCode.Q))
-      {
-         dooranimator.SetBool("Open", false);
-      }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (dooranimator.GetBool("Open") == true)
+            {
+                dooranimator.SetBool("Open", false);
+            }
+        }
     }  
 }
