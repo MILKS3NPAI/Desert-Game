@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Player_Controls : MonoBehaviour
 {
-    public float movespeed = 5f;
-    public float jumpspeed;
-    public bool isGrounded = false;
+    [SerializeField] private LayerMask platformsLayerMask;
     private Rigidbody2D body;
+    private BoxCollider2D boxCollider2d;
+    private float movespeed = 7f;
+    private float jumpspeed = 65f;
+    private float movement;
+   
   
     void Start()
     {
-        
-        
+        body = GetComponent<Rigidbody2D>();
+        boxCollider2d = transform.GetComponent<BoxCollider2D>();
     }
     private void Update()
     {
@@ -21,32 +24,23 @@ public class Player_Controls : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
-        transform.position += movement * Time.deltaTime * movespeed;
+        movement = Input.GetAxis("Horizontal") * movespeed;
+        body.velocity = new Vector3(movement, body.velocity.y, 0f);
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.tag == "Floor")
-        {
-            GetComponent<Player_Controls>().isGrounded = true;
-        }
-       
-    }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.collider.tag == "Floor")
-        {
-            GetComponent<Player_Controls>().isGrounded = false;
-        }
-    }
+   
 
     void Jump()
     {
-        if (Input.GetButtonDown("Jump") && isGrounded == true)
+        if (Input.GetButtonDown("Jump") && IsGrounded())
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpspeed), ForceMode2D.Impulse);
+            body.AddForce(new Vector2(0f, jumpspeed), ForceMode2D.Impulse);
         }
         
     }
-    
+    private bool IsGrounded()
+    {
+        RaycastHit2D raycastHit2d = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, 0f, Vector2.down, .1f, platformsLayerMask);
+        Debug.Log(raycastHit2d.collider);
+        return raycastHit2d.collider != null;
+    }
 }
