@@ -58,10 +58,5 @@ public class Player_Controls : MonoBehaviour
     {
 
     }
-    //private bool WallCollision()
-    //{
-    //    RaycastHit2D raycastHit2dleft = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, 0f, Vector2.left, .1f, platformsLayerMask);
-    //    RaycastHit2D raycastHit2dright = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, 0f, Vector2.right, .1f, platformsLayerMask);
-    //    return raycastHit2dleft.collider != null;
-    //}
+
 }

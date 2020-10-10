@@ -34,6 +34,7 @@ public class Door_Trigger : MonoBehaviour
             if (dooranimator.GetBool("Open") == true)
             {
                 dooranimator.SetBool("Open", false);
+                sound.Play();
             }
         }
     }  
