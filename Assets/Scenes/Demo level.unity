@@ -399,7 +399,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -586,7 +586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 747192881, guid: 500819a622204a34cb05eea927ab656a, type: 3}
       propertyPath: nodeRect.y
-      value: 118
+      value: 121
       objectReference: {fileID: 0}
     - target: {fileID: 747192881, guid: 500819a622204a34cb05eea927ab656a, type: 3}
       propertyPath: nodeRect.x
@@ -630,7 +630,7 @@ PrefabInstance:
       objectReference: {fileID: 1019935759}
     - target: {fileID: 747192897, guid: 500819a622204a34cb05eea927ab656a, type: 3}
       propertyPath: commandList.Array.size
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 747192897, guid: 500819a622204a34cb05eea927ab656a, type: 3}
       propertyPath: commandList.Array.data[5]
@@ -980,7 +980,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -1151,7 +1151,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -1838,6 +1838,10 @@ PrefabInstance:
     - target: {fileID: 7818109864885950865, guid: 00d6aa6751d5c2c479af8e7594318f53, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7818109864885950868, guid: 00d6aa6751d5c2c479af8e7594318f53, type: 3}
+      propertyPath: jumpspeed
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d6aa6751d5c2c479af8e7594318f53, type: 3}

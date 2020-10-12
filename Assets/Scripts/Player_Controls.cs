@@ -10,8 +10,10 @@ public class Player_Controls : MonoBehaviour
     private BoxCollider2D boxCollider2d;
     public Fungus.Flowchart myFlowchart;
     private float movespeed = 7f;
-    private float jumpspeed = 65f;
+    private float jumpspeed = 16f;
     private float movement;
+    private float coyote_time = 0.06f;
+    public int buffer_jump = 0;
     public bool player_in_dialogue;
   
     void Start()
@@ -25,7 +27,21 @@ public class Player_Controls : MonoBehaviour
         player_in_dialogue = myFlowchart.GetBooleanVariable("player_in_chat");
         if (player_in_dialogue == false)
         {
+            if (!IsGrounded())
+            {
+                coyote_time -= Time.deltaTime;
+            }
+            else
+            {
+                coyote_time = 0.06f;
+            }
+            if (buffer_jump >= 1 && IsGrounded())
+            {
+                body.velocity = new Vector3(body.velocity.x, jumpspeed);
+                buffer_jump = 0;
+            }
             Jump();
+            
         }
     }
 
@@ -35,15 +51,20 @@ public class Player_Controls : MonoBehaviour
         {
             movement = Input.GetAxis("Horizontal") * movespeed;
             body.velocity = new Vector3(movement, body.velocity.y, 0f);
+           
         }
     }
    
 
     void Jump()
     {
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (Input.GetButtonDown("Jump") && coyote_time > 0)
         {
-            body.AddForce(new Vector2(0f, jumpspeed), ForceMode2D.Impulse);
+            body.velocity = new Vector3(body.velocity.x, jumpspeed);
+        }
+        else if (Input.GetButtonDown("Jump") && !IsGrounded() && NearGround() && body.velocity.y < 0)
+        {
+            buffer_jump += 1;
         }
         
     }
@@ -51,6 +72,11 @@ public class Player_Controls : MonoBehaviour
     private bool IsGrounded()
     {
         RaycastHit2D raycastHit2d = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, 0f, Vector2.down, .1f, platformsLayerMask);
+        return raycastHit2d.collider != null;
+    }
+    private bool NearGround()
+    {
+        RaycastHit2D raycastHit2d = Physics2D.BoxCast(boxCollider2d.bounds.center, boxCollider2d.bounds.size, 0f, Vector2.down, 2f, platformsLayerMask);
         return raycastHit2d.collider != null;
     }
 
