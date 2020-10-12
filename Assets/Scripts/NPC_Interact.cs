@@ -19,21 +19,6 @@ public class NPC_Interact : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (chat_progress == chat_max + 1)
-        //{
-        //         myflowchart.StopBlock(stringname + (chat_progress - 1));
-        //}
-            //if (Input.GetKeyDown(KeyCode.E) && chat_progress == chat_max)
-            //{
-        
-            //    myflowchart.ExecuteBlock(stringname + chat_progress); 
-            //    chat_progress += 1;
-            //}
-            //else if (Input.GetKeyDown(KeyCode.E) && chat_progress < chat_max)
-            //{
-            //    myflowchart.ExecuteBlock(stringname + chat_progress);
-            //    chat_progress += 1;
-            //} 
         if (chat_progress >= chat_max)
         {
             chat_progress = chat_max;
@@ -41,7 +26,7 @@ public class NPC_Interact : MonoBehaviour
 
         if (!myflowchart.HasExecutingBlocks())
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && myflowchart.GetBooleanVariable("player_in_range") == true)
             {
                 myflowchart.ExecuteBlock(stringname + chat_progress);
                 chat_progress += 1;
