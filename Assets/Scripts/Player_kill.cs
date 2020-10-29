@@ -8,7 +8,9 @@ public class Player_kill : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.CompareTag("Player"))
-            collision.transform.position = spawnPoint.position;
+        if (collision.tag == "Player")
+        {
+            collision.transform.position = new Vector2(spawnPoint.transform.position.x, spawnPoint.transform.position.y);
+        }
     }
 }
