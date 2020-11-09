@@ -669,6 +669,37 @@ PrefabInstance:
     - {fileID: 3087063283166149215, guid: dba1834fa35ecd14c8233d7253506f6e, type: 3}
     - {fileID: 698295767, guid: dba1834fa35ecd14c8233d7253506f6e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dba1834fa35ecd14c8233d7253506f6e, type: 3}
+--- !u!1 &301177138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3904856366520723462, guid: ba94d2b522fbc914ba9e09a4645e8530, type: 3}
+  m_PrefabInstance: {fileID: 3904856365975515198}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &301177139
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301177138}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 24.298306, y: 1.4}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 24.298306, y: 1.32}
+  m_EdgeRadius: 0
 --- !u!1 &400911661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,17 +1068,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &747192869 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 747192869, guid: 500819a622204a34cb05eea927ab656a, type: 3}
-  m_PrefabInstance: {fileID: 417595164}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1367270515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &795936422 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3087063283166149210, guid: dba1834fa35ecd14c8233d7253506f6e, type: 3}
@@ -2203,7 +2223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 747192869}
+  selectedFlowchart: {fileID: 0}
 --- !u!4 &1507538384
 Transform:
   m_ObjectHideFlags: 1
@@ -2821,7 +2841,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 500303661, guid: ba94d2b522fbc914ba9e09a4645e8530, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ba94d2b522fbc914ba9e09a4645e8530, type: 3}
 --- !u!1001 &6226786895968691515
 PrefabInstance:
@@ -2904,6 +2925,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1117321564}
     m_Modifications:
+    - target: {fileID: 1789756339, guid: 0aa89985b3e30f44e8a918db059f3ef1, type: 3}
+      propertyPath: m_Size.y
+      value: 0.76
+      objectReference: {fileID: 0}
     - target: {fileID: 5227220131614986016, guid: 0aa89985b3e30f44e8a918db059f3ef1, type: 3}
       propertyPath: m_Color.g
       value: 1
@@ -3043,7 +3068,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7818109864885950871, guid: 00d6aa6751d5c2c479af8e7594318f53, type: 3}
       propertyPath: m_Offset.y
-      value: -0.30685836
+      value: -0.2368584
       objectReference: {fileID: 0}
     - target: {fileID: 7818109864885950871, guid: 00d6aa6751d5c2c479af8e7594318f53, type: 3}
       propertyPath: m_Size.y
