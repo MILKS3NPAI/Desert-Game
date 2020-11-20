@@ -939,7 +939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: DIO
+  nameText: '  Nemty'
   nameColor: {r: 1, g: 0.88759816, b: 0, a: 1}
   soundEffect: {fileID: 0}
   portraits:
@@ -973,7 +973,7 @@ MonoBehaviour:
   useDefaultSettings: 1
   fadeDuration: 0.5
   moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
+  shiftOffset: {x: 0, y: 100}
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
@@ -1786,7 +1786,7 @@ MonoBehaviour:
   scrollPos: {x: 870.5, y: -62}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 519
+  blockViewHeight: 372.3333
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -1795,7 +1795,7 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 747192904}
+  - {fileID: 747192897}
   selectedCommands: []
   variables:
   - {fileID: 747192873}
@@ -1827,7 +1827,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -517
     y: 118
-    width: 79
+    width: 80
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2051,7 +2051,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -395
     y: 124
-    width: 70
+    width: 70.666664
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2257,7 +2257,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -203
     y: 115
-    width: 75
+    width: 76
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2286,7 +2286,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 7
   indentLevel: 1
-  storyText: KONO DIO DA!!!!
+  storyText: "   YOU MAY HAVE WITS MORTAL BUT DO YOU ALSO HAVE \n   THE FINESSE TO
+    PASS THE TRIALS"
   description: 
   character: {fileID: 823570579}
   portrait: {fileID: 21300000, guid: f116183842fc917428365e113205c54f, type: 3}
@@ -3175,7 +3176,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -200.5
     y: 183
-    width: 81
+    width: 82
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3225,7 +3226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 26
   indentLevel: 1
-  storyText: DIO
+  storyText: ' Nemty'
   description: 
   character: {fileID: 823570579}
   portrait: {fileID: 21300000, guid: f116183842fc917428365e113205c54f, type: 3}
@@ -3649,7 +3650,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -203.5
     y: 249
-    width: 82
+    width: 83.33333
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3660,9 +3661,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 747192896}
   - {fileID: 747192895}
-  - {fileID: 0}
   - {fileID: 747192893}
-  - {fileID: 0}
   suppressAllAutoSelections: 0
 --- !u!114 &747192900
 MonoBehaviour:
@@ -3707,7 +3706,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -65.5
     y: 129
-    width: 73
+    width: 74
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3716,9 +3715,5 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 747192900}
-  - {fileID: 0}
   suppressAllAutoSelections: 0

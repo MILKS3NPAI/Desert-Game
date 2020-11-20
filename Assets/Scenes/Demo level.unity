@@ -720,6 +720,10 @@ PrefabInstance:
       propertyPath: selectedCommands.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 747192869, guid: 500819a622204a34cb05eea927ab656a, type: 3}
+      propertyPath: blockViewHeight
+      value: 223.66666
+      objectReference: {fileID: 0}
     - target: {fileID: 747192881, guid: 500819a622204a34cb05eea927ab656a, type: 3}
       propertyPath: commandList.Array.size
       value: 4
@@ -744,6 +748,12 @@ PrefabInstance:
       propertyPath: commandList.Array.data[3]
       value: 
       objectReference: {fileID: 1367270530}
+    - target: {fileID: 747192882, guid: 500819a622204a34cb05eea927ab656a, type: 3}
+      propertyPath: storyText
+      value: "   I pity you mortal. Few have ever passed the first trial of the underworld.
+        \n   Even if you were to spend all of eternity you will never solve MY GREAT
+        \n   PUZZLE. TREMBLE IN DESPAAAIIR!!"
+      objectReference: {fileID: 0}
     - target: {fileID: 747192883, guid: 500819a622204a34cb05eea927ab656a, type: 3}
       propertyPath: conditions.Array.size
       value: 1

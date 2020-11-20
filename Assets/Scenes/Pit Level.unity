@@ -2017,7 +2017,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0.5
     y: 114
-    width: 60
+    width: 76
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2140,7 +2140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 747192869, guid: 500819a622204a34cb05eea927ab656a, type: 3}
       propertyPath: blockViewHeight
-      value: 457
+      value: 351.66666
       objectReference: {fileID: 0}
     - target: {fileID: 747192869, guid: 500819a622204a34cb05eea927ab656a, type: 3}
       propertyPath: variables.Array.data[3]
