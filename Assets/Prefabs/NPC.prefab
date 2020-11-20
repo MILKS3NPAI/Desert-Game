@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f116183842fc917428365e113205c54f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 282ac7e8d902c554bade4a0a768c004e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -943,7 +943,7 @@ MonoBehaviour:
   nameColor: {r: 1, g: 0.88759816, b: 0, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: f116183842fc917428365e113205c54f, type: 3}
+  - {fileID: 21300000, guid: 282ac7e8d902c554bade4a0a768c004e, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -961,16 +961,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: -1
   indentLevel: 0
-  display: 1
+  display: 0
   stage: {fileID: 2114502232}
   character: {fileID: 823570579}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: f116183842fc917428365e113205c54f, type: 3}
+  portrait: {fileID: 21300000, guid: 282ac7e8d902c554bade4a0a768c004e, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
   facing: 1
-  useDefaultSettings: 1
+  useDefaultSettings: 0
   fadeDuration: 0.5
   moveDuration: 1
   shiftOffset: {x: 0, y: 0}
@@ -1320,7 +1320,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0014648, y: -8.0137}
+  m_AnchoredPosition: {x: -12.76, y: -13.69}
   m_SizeDelta: {x: 2560.4624, y: 1216.0271}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1729277865
